@@ -1,0 +1,5 @@
+humidity.py outputs to a terminal interface
+
+humidity2.py outputs to a csv file once stoped
+
+temp.php is ran when browsed to, runs humidity2.py and outputs to a web browser 
