@@ -1,0 +1,6 @@
+mysql -u root -p
+CREATE DATABASE sensor;  
+CREATE USER user@localhost IDENTIFIED BY 'password';
+USE sensor; 
+
+CREATE TABLE dhtsensor(datetime BIGINT NOT NULL, temperature FLOAT (6,3) NOT NULL, humidity (6,3) NOT NULL);  
