@@ -3,4 +3,4 @@ CREATE DATABASE sensor;
 CREATE USER user@localhost IDENTIFIED BY 'password';
 USE sensor; 
 
-CREATE TABLE dhtsensor(datetime BIGINT NOT NULL, temperature FLOAT (6,3) NOT NULL, humidity (6,3) NOT NULL);  
+CREATE TABLE dhtsensor(datetime TIMESTAMP DEFAULT CURRENT_TIMESTAMP, temperature FLOAT (6,3) NOT NULL, humidity (6,3) NOT NULL);  
