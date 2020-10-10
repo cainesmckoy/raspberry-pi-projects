@@ -25,8 +25,7 @@ while True:
     #print ('Temp: {0:0.1f} F  Humidity: {1:0.1f} %'.format(convert, humidity))
   
     def dateTime(): #get UNIX time  
-            secs = float(time.time())  
-            secs = secs*1000  
+            secs = time.strftime('%Y-$m-%d %H:%M:%S')
             return secs  
   
     def tempRead(): #read temperature, return float with 3 decimal places  
